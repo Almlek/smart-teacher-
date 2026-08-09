@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1." />
+  <title>المستودع المعرفي</title>
+
+  <!-- ملف التنسيق الخاص بالمستودع -->
+  <link rel="stylesheet" href="storage.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- الشريط العلوي -->
+    <header class="top-bar">
+
+      <!-- زر الرجوع للرئيسية -->
+      <a href="index.html" class="back-btn" aria-label="رجوع إلى الصفحة الرئيسية">
+        ‹
+      </a>
+
+      <!-- عنوان الصفحة -->
+      <h1>الموائل</h1>
+
+      <!-- التحكم بحجم الخط -->
+      <div class="font-controls">
+        <button type="button" id="decreaseFont">-A</button>
+        <button type="button" id="increaseFont">+A</button>
+      </div>
+
+      <!-- اختيار الخط -->
+      <button type="button" class="top-select">
+        <span>⭐</span>
+        <span>كايرو</span>
+        <span class="arrow">⌄</span>
+      </button>
+
+      <!-- اختيار اللون -->
+      <button type="button" class="top-select">
+        <span class="color-dot"></span>
+        <span>بنفسجي</span>
+        <span class="arrow">⌄</span>
+      </button>
+
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <main class="content">
+
+      <section class="storage-card">
+
+        <!-- عنوان الكرت -->
+        <h2>
+          <span>🗄️</span>
+          المستودع المعرفي
+        </h2>
+
+        <!-- رسالة توضيحية -->
+        <div class="notice-box">
+          حدد الدروس والوحدات التي تريد دمجها لإنشاء اختبار أو ملخص شامل.
+        </div>
+
+        <!-- حالة المستودع الفارغ -->
+        <p class="empty-message">
+          المستودع فارغ، قم بحفظ النصوص من شاشة التحضير.
+        </p>
+
+        <!-- أزرار الإجراءات -->
+        <div class="actions">
+
+          <button type="button" class="btn primary-btn">
+            <span>📝</span>
+            اختبار شامل
+          </button>
+
+          <button type="button" class="btn outline-btn">
+            <span>📚</span>
+            ملخص شامل
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

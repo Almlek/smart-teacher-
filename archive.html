@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1." />
+  <title>الأرشيف</title>
+  <link rel="stylesheet" href="archive.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- الشريط العلوي -->
+    <header class="top-bar">
+
+      <a href="index.html" class="back-btn" aria-label="رجوع">
+        ‹
+      </a>
+
+      <h1>الأرشيف</h1>
+
+      <div class="font-controls">
+        <button type="button">-A</button>
+        <button type="button">+A</button>
+      </div>
+
+      <div class="top-select">
+        <span>⭐</span>
+        <span>كايرو</span>
+        <span>⌄</span>
+      </div>
+
+      <div class="top-select">
+        <span class="color-dot"></span>
+        <span>بنفسجي</span>
+        <span>⌄</span>
+      </div>
+
+    </header>
+
+    <!-- المحتوى -->
+    <main class="content">
+
+      <section class="archive-card">
+
+        <div class="archive-header">
+          <h2>
+            <span>📚</span>
+            أرشيف التحضيرات
+          </h2>
+
+          <a href="new-plan.html" class="new-plan-btn">
+            <span>＋</span>
+            تحضير جديد
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input type="search" placeholder="ابحث باسم الدرس أو المادة أو الصف..." />
+        </div>
+
+        <div class="filter-row">
+          <button type="button" class="active">الكل</button>
+          <button type="button">اليوم</button>
+          <button type="button">هذا الأسبوع</button>
+          <button type="button">هذا الشهر</button>
+        </div>
+
+        <div class="archive-list">
+
+          <!-- عنصر أرشيف -->
+          <article class="archive-item">
+            <div class="item-info">
+              <h3>درس الموائل الطبيعية</h3>
+              <p>العلوم · الصف الرابع · 2026/07/20</p>
+            </div>
+
+            <div class="item-actions">
+              <button type="button" class="view-btn">عرض</button>
+              <button type="button" class="edit-btn">تعديل</button>
+              <button type="button" class="delete-btn">حذف</button>
+            </div>
+          </article>
+
+          <!-- عنصر أرشيف -->
+          <article class="archive-item">
+            <div class="item-info">
+              <h3>قواعد اللغة العربية</h3>
+              <p>اللغة العربية · الصف الثاني الثانوي · 2026/07/18</p>
+            </div>
+
+            <div class="item-actions">
+              <button type="button" class="view-btn">عرض</button>
+              <button type="button" class="edit-btn">تعديل</button>
+              <button type="button" class="delete-btn">حذف</button>
+            </div>
+          </article>
+
+          <!-- حالة عدم وجود بيانات، يمكنك إظهارها لاحقًا بالجافاسكريبت -->
+          <!--
+          <div class="empty-state">
+            لا توجد تحضيرات محفوظة بعد.
+          </div>
+          -->
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

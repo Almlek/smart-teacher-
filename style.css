@@ -1,0 +1,224 @@
+/* إعادة ضبط العناصر */
+* {
+  box-sizing: border-box;
+  margin: ;
+  padding: ;
+}
+
+/* تنسيق عام للصفحة */
+body {
+  min-height: 100vh;
+  background: #1b1b1f;
+  font-family: "Tahoma", "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8d6ff;
+}
+
+/* إزالة خط الروابط */
+a {
+  text-decoration: none;
+}
+
+/* الحاوية الرئيسية */
+.app-container {
+  width: min(92%, 720px);
+  background: #101012;
+  border-radius: 42px;
+  padding: 55px 42px 42px;
+  box-shadow:  20px 50px rgba(, , , .45);
+}
+
+/* العنوان */
+.header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.header h1 {
+  font-size: 38px;
+  color: #ffd8ff;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 24px;
+  color: #8d9bb4;
+}
+
+/* شبكة البطاقات */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+/* تصميم البطاقات */
+.card,
+.settings-card {
+  background: #242128;
+  border: 2px solid #57515f;
+  border-radius: 28px;
+  min-height: 230px;
+  cursor: pointer;
+  color: #f5c8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  transition: .25s ease;
+}
+
+/* تأثير عند المرور */
+.card:hover,
+.settings-card:hover {
+  transform: translateY(-5px);
+  border-color: #d7a5e8;
+  background: #2d2733;
+  box-shadow:  12px 28px rgba(215, 165, 232, .18);
+}
+
+/* الأيقونات */
+.icon {
+  font-size: 60px;
+  line-height: 1;
+}
+
+/* عنوان البطاقة */
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* قسم الإعدادات */
+.settings-section {
+  width: 100%;
+}
+
+/* زر الإعدادات */
+.settings-card {
+  width: 100%;
+  min-height: 230px;
+}
+
+/* تحسين الضغط على الجوال */
+.card:active,
+.settings-card:active {
+  transform: scale(.97);
+}
+
+/* تجاوب مع الشاشات المتوسطة */
+@media (max-width: 768px) {
+  .app-container {
+    width: 92%;
+    padding: 48px 34px 36px;
+    border-radius: 38px;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .header p {
+    font-size: 22px;
+  }
+
+  .card,
+  .settings-card {
+    min-height: 210px;
+  }
+
+  .icon {
+    font-size: 54px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+
+/* تجاوب مع الجوال */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding: 24px ;
+  }
+
+  .app-container {
+    width: 92%;
+    padding: 40px 22px 28px;
+    border-radius: 34px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .cards-grid {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .card,
+  .settings-card {
+    min-height: 170px;
+    border-radius: 22px;
+    gap: 18px;
+  }
+
+  .icon {
+    font-size: 44px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+/* تجاوب مع الشاشات الصغيرة جدًا */
+@media (max-width: 420px) {
+  .app-container {
+    width: 94%;
+    padding: 34px 16px 24px;
+    border-radius: 30px;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .cards-grid {
+    gap: 16px;
+  }
+
+  .card,
+  .settings-card {
+    min-height: 145px;
+    border-radius: 20px;
+  }
+
+  .icon {
+    font-size: 38px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

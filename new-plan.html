@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1." />
+  <title>تحضير جديد</title>
+
+  <!-- ملف التنسيق الخاص بصفحة تحضير جديد -->
+  <link rel="stylesheet" href="new-plan.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- الشريط العلوي -->
+    <header class="top-bar">
+
+      <!-- زر الرجوع للصفحة الرئيسية -->
+      <a href="index.html" class="back-btn" aria-label="رجوع">
+        ‹
+      </a>
+
+      <!-- عنوان الصفحة -->
+      <h1>تحضير<br>جديد</h1>
+
+      <!-- أزرار التحكم بحجم الخط -->
+      <div class="font-controls">
+        <button type="button" aria-label="تصغير الخط">-A</button>
+        <button type="button" aria-label="تكبير الخط">+A</button>
+      </div>
+
+      <!-- اختيار الخط -->
+      <button type="button" class="top-select">
+        <span>⭐</span>
+        <span>كايرو</span>
+        <span>⌄</span>
+      </button>
+
+      <!-- اختيار اللون -->
+      <button type="button" class="top-select">
+        <span class="color-dot"></span>
+        <span>بنفسجي</span>
+        <span>⌄</span>
+      </button>
+
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <main class="content">
+
+      <!-- بيانات الحصة -->
+      <section class="panel">
+        <h2>بيانات الحصة</h2>
+
+        <div class="form-group">
+          <label for="school">المدرسة</label>
+          <input id="school" type="text" placeholder="اسم المدرسة" />
+        </div>
+
+        <div class="form-group">
+          <label for="teacher">المعلم</label>
+          <input id="teacher" type="text" placeholder="اسم المعلم" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">المادة</label>
+          <input id="subject" type="text" value="اللغة الإنجليزية" />
+        </div>
+
+        <div class="form-group">
+          <label for="grade">الصف</label>
+          <input id="grade" type="text" value="الثاني الثانوي" />
+        </div>
+
+        <div class="form-group">
+          <label for="classroom">الشعبة</label>
+          <input id="classroom" type="text" value="أ" />
+        </div>
+
+        <div class="form-group small-field">
+          <label for="date">التاريخ</label>
+          <input id="date" type="date" value="2026-07-20" />
+        </div>
+
+        <div class="form-group">
+          <label for="period">الحصة</label>
+          <input id="period" type="text" value="الأولى" />
+        </div>
+
+        <div class="form-group">
+          <label for="lesson-title">عنوان الدرس *</label>
+          <input id="lesson-title" type="text" placeholder="اكتب عنوان الدرس" required />
+        </div>
+      </section>
+
+      <!-- لغة الخطة -->
+      <section class="panel">
+        <h2>لغة الخطة</h2>
+
+        <div class="language-tabs">
+          <button type="button" class="active">عربي 🇪🇬</button>
+          <button type="button">English 🇬🇧</button>
+        </div>
+      </section>
+
+      <!-- مصدر المحتوى -->
+      <section class="panel">
+        <h2>مصدر المحتوى</h2>
+
+        <div class="source-tabs">
+          <button type="button" class="active">عنوان فقط</button>
+          <button type="button">نص</button>
+          <button type="button">صور</button>
+          <button type="button">ملف Word</button>
+          <button type="button">المحتوى</button>
+        </div>
+
+        <div class="hint-box">
+          💡 سينشئ الذكاء الاصطناعي الخطة الكاملة بناءً على عنوان الدرس والمادة والصف فقط.
+        </div>
+      </section>
+
+      <!-- نموذج الذكاء الاصطناعي -->
+      <section class="panel">
+        <h2>نموذج الذكاء الاصطناعي</h2>
+
+        <select class="model-select" aria-label="اختيار نموذج الذكاء الاصطناعي">
+          <option>⭐ Gemini 3.5 Flash</option>
+          <option>Gemini 1.5 Pro</option>
+          <option>GPT</option>
+        </select>
+
+        <div class="action-grid">
+          <button type="button" class="generate-btn">
+            ⚡ توليد الخطة
+          </button>
+
+          <button type="button" class="board-btn">
+            🖍️ السبورة
+          </button>
+
+          <button type="button" class="voice-btn">
+            🎧 درس صوتي
+          </button>
+
+          <button type="button" class="summary-btn">
+            📝 ملخص تفاعلي
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

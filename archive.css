@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: ;
+  padding: ;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #fbf4ff;
+  color: #242247;
+  min-height: 100vh;
+}
+
+/* الصفحة */
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff8ff %, #fbf4ff 45%, #f8efff 100%);
+}
+
+/* الشريط العلوي */
+.top-bar {
+  min-height: 82px;
+  background: #28234f;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  box-shadow:  6px 18px rgba(40, 35, 79, .25);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.top-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* زر الرجوع */
+.back-btn {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  border-radius: 15px;
+  background: #46406d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  line-height: 1;
+  text-decoration: none;
+  padding-bottom: 7px;
+}
+
+/* عنوان الصفحة */
+.top-bar h1 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-inline-end: auto;
+}
+
+/* أزرار تكبير وتصغير الخط */
+.font-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.font-controls button {
+  width: 62px;
+  height: 58px;
+  border: none;
+  border-radius: 15px;
+  background: #46406d;
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* المحتوى */
+.content {
+  padding: 26px 18px 40px;
+}
+
+/* كرت الأرشيف الرئيسي */
+.archive-card {
+  max-width: 720px;
+  margin:  auto;
+  background: #ffffff;
+  border: 2px solid #e3d8ff;
+  border-radius: 26px;
+  padding: 28px 22px;
+  box-shadow:  12px 28px rgba(126, 72, 218, .12);
+}
+
+/* رأس كرت الأرشيف */
+.archive-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.archive-header h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #242247;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* زر إنشاء تحضير */
+.new-plan-btn {
+  border: none;
+  background: #8137e8;
+  color: white;
+  border-radius: 15px;
+  padding: 15px 22px;
+  font-size: 21px;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow:  8px 18px rgba(129, 55, 232, .25);
+  transition: .25s ease;
+}
+
+.new-plan-btn:hover {
+  transform: translateY(-3px);
+  background: #743d8;
+}
+
+/* شريط البحث */
+.search-box {
+  margin-bottom: 22px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 62px;
+  border: 2px solid #ddcffb;
+  border-radius: 16px;
+  background: #fcf7ff;
+  color: #242247;
+  padding:  18px;
+  font-size: 22px;
+  font-weight: 800;
+  outline: none;
+  text-align: right;
+}
+
+.search-box input::placeholder {
+  color: #92909c;
+}
+
+.search-box input:focus {
+  border-color: #8137e8;
+  box-shadow:    4px rgba(129, 55, 232, .12);
+}
+
+/* فلاتر الأرشيف */
+.archive-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.archive-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.archive-filters button {
+  min-width: 120px;
+  height: 52px;
+  border: 2px solid #ed4ff;
+  border-radius: 14px;
+  background: white;
+  color: #777783;
+  font-size: 19px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.archive-filters button.active,
+.archive-filters button:hover {
+  background: #8137e8;
+  color: white;
+  border-color: #8137e8;
+}
+
+/* قائمة التحاضير */
+.archive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* عنصر التحضير */
+.archive-item {
+  background: #fcf7ff;
+  border: 2px solid #e4d8ff;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: .25s ease;
+}
+
+.archive-item:hover {
+  transform: translateY(-3px);
+  border-color: #c7adff;
+  box-shadow:  10px 24px rgba(126, 72, 218, .12);
+}
+
+/* معلومات التحضير */
+.archive-info {
+  flex: 1;
+}
+
+.archive-info h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #242247;
+  margin-bottom: 8px;
+}
+
+.archive-info p {
+  font-size: 18px;
+  font-weight: 800;
+  color: #777783;
+  line-height: 1.6;
+}
+
+/* وسم الحالة */
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.status.saved {
+  background: #e8fff2;
+  color: #16864b;
+}
+
+.status.draft {
+  background: #fff5dc;
+  color: #b07000;
+}
+
+/* أزرار الإجراءات */
+.archive-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.archive-actions button,
+.archive-actions a {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 13px;
+  background: #ffffff;
+  border: 2px solid #e2d6ff;
+  color: #242247;
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s ease;
+}
+
+.archive-actions button:hover,
+.archive-actions a:hover {
+  background: #fe8ff;
+  border-color: #b99aff;
+}
+
+.archive-actions .delete-btn:hover {
+  background: #ffecec;
+  border-color: #ff9d9d;
+}
+
+/* رسالة عدم وجود عناصر */
+.empty-archive {
+  background: #f5efff;
+  border: 2px dashed #d7c6ff;
+  border-radius: 20px;
+  padding: 36px 20px;
+  text-align: center;
+  color: #777783;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.7;
+}
+
+/* للجوال */
+@media (max-width: 600px) {
+  .top-bar {
+    min-height: 74px;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .back-btn {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    font-size: 44px;
+  }
+
+  .top-bar h1 {
+    font-size: 25px;
+  }
+
+  .font-controls button {
+    width: 54px;
+    height: 52px;
+    font-size: 19px;
+  }
+
+  .content {
+    padding: 22px 12px 34px;
+  }
+
+  .archive-card {
+    padding: 24px 14px;
+    border-radius: 23px;
+  }
+
+  .archive-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .archive-header h2 {
+    font-size: 24px;
+  }
+
+  .new-plan-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 18px;
+  }
+
+  .search-box input {
+    height: 58px;
+    font-size: 20px;
+  }
+
+  .archive-filters button {
+    min-width: 105px;
+    height: 48px;
+    font-size: 17px;
+  }
+
+  .archive-item {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .archive-info h3 {
+    font-size: 22px;
+  }
+
+  .archive-info p {
+    font-size: 17px;
+  }
+
+  .archive-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .archive-actions button,
+  .archive-actions a {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .empty-archive {
+    font-size: 20px;
+    padding: 30px 16px;
+  }
+}

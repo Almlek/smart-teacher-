@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1." />
+  <title>الإعدادات</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- الشريط العلوي -->
+    <header class="top-bar">
+
+      <a href="index.html" class="back-btn" aria-label="رجوع">
+        ‹
+      </a>
+
+      <h1>الإعدادات</h1>
+
+      <div class="font-controls">
+        <button type="button" id="decreaseFont">-A</button>
+        <button type="button" id="increaseFont">+A</button>
+      </div>
+
+    </header>
+
+    <!-- المحتوى -->
+    <main class="content">
+
+      <!-- إعدادات المعلم -->
+      <section class="settings-panel">
+        <h2>
+          <span>👨‍🏫</span>
+          بيانات المعلم
+        </h2>
+
+        <div class="form-group">
+          <label for="teacherName">اسم المعلم</label>
+          <input type="text" id="teacherName" placeholder="اكتب اسم المعلم">
+        </div>
+
+        <div class="form-group">
+          <label for="schoolName">اسم المدرسة</label>
+          <input type="text" id="schoolName" placeholder="اكتب اسم المدرسة">
+        </div>
+
+        <div class="form-group">
+          <label for="subjectName">المادة الافتراضية</label>
+          <input type="text" id="subjectName" placeholder="مثال: اللغة العربية">
+        </div>
+
+        <div class="form-group">
+          <label for="gradeName">الصف الافتراضي</label>
+          <input type="text" id="gradeName" placeholder="مثال: الثاني الثانوي">
+        </div>
+      </section>
+
+      <!-- إعدادات المظهر -->
+      <section class="settings-panel">
+        <h2>
+          <span>🎨</span>
+          المظهر
+        </h2>
+
+        <div class="form-group">
+          <label for="themeSelect">الثيم</label>
+          <select id="themeSelect">
+            <option value="purple">بنفسجي</option>
+            <option value="dark">داكن</option>
+            <option value="blue">أزرق</option>
+            <option value="green">أخضر</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fontSelect">نوع الخط</label>
+          <select id="fontSelect">
+            <option value="Tahoma">Tahoma</option>
+            <option value="Arial">Arial</option>
+            <option value="Cairo">Cairo</option>
+            <option value="sans-serif">Sans Serif</option>
+          </select>
+        </div>
+
+        <div class="switch-row">
+          <div>
+            <h3>الوضع الليلي</h3>
+            <p>تفعيل خلفية داكنة للتطبيق</p>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- إعدادات الذكاء الاصطناعي -->
+      <section class="settings-panel">
+        <h2>
+          <span>🤖</span>
+          الذكاء الاصطناعي
+        </h2>
+
+        <div class="form-group">
+          <label for="aiModel">النموذج الافتراضي</label>
+          <select id="aiModel">
+            <option>Gemini 3.5 Flash</option>
+            <option>Gemini 1.5 Pro</option>
+            <option>GPT</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="apiKey">مفتاح API</label>
+          <input type="password" id="apiKey" placeholder="ضع مفتاح API هنا">
+        </div>
+
+        <div class="switch-row">
+          <div>
+            <h3>حفظ النتائج تلقائيًا</h3>
+            <p>حفظ التحضيرات داخل الأرشيف بعد التوليد</p>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox" id="autoSaveToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- أزرار التحكم -->
+      <section class="settings-actions">
+        <button type="button" class="save-btn" id="saveSettings">
+          💾 حفظ الإعدادات
+        </button>
+
+        <button type="button" class="reset-btn" id="resetSettings">
+          ♻️ استعادة الافتراضي
+        </button>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

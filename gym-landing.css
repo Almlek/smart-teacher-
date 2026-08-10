@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: ;
+  padding: ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #080b14;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* الشريط العلوي */
+.navbar {
+  width: min(118px, 92%);
+  margin: 20px auto ;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 22px;
+  background: rgba(15, 20, 35, .75);
+  backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+}
+
+.logo strong {
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+  color: #b9cd4;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #7cf7c7;
+}
+
+.nav-btn {
+  background: #7cf7c7;
+  color: #07110d;
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-weight: 800;
+}
+
+/* القسم الرئيسي */
+.hero {
+  width: min(118px, 92%);
+  margin: 80px auto 70px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(124, 247, 199, .12);
+  color: #7cf7c7;
+  border: 1px solid rgba(124, 247, 199, .25);
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 72px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+  letter-spacing: -1px;
+}
+
+.hero h1 span {
+  color: #7cf7c7;
+}
+
+.hero p {
+  color: #b9cd4;
+  font-size: 19px;
+  max-width: 640px;
+  margin-bottom: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 26px;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.primary-btn {
+  background: #7cf7c7;
+  color: #07110d;
+  box-shadow:  18px 40px rgba(124, 247, 199, .22);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, .08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, .12);
+}
+
+.stats {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  min-width: 120px;
+}
+
+.stats strong {
+  display: block;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.stats span {
+  color: #8e98b3;
+  font-size: 14px;
+}
+
+/* بطاقة الهيرو */
+.hero-card {
+  min-height: 480px;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top right, rgba(124, 247, 199, .35), transparent 35%),
+    linear-gradient(135deg, #151b2e, #d122);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: rgba(124, 247, 199, .14);
+  border-radius: 50%;
+  bottom: -80px;
+  left: -80px;
+  filter: blur(20px);
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, .09);
+  border: 1px solid rgba(255, 255, 255, .14);
+  backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 2;
+}
+
+.card-label {
+  color: #7cf7c7;
+  font-weight: 800;
+}
+
+.glass-card h3 {
+  font-size: 30px;
+  margin: 12px  24px;
+}
+
+.progress-box {
+  margin-bottom: 24px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  color: #dce3f5;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 12px;
+  background: rgba(255, 255, 255, .12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress div {
+  width: 78%;
+  height: 100%;
+  background: #7cf7c7;
+  border-radius: 999px;
+}
+
+.glass-card ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  color: #e5eaf8;
+}
+
+/* الأقسام */
+.section {
+  width: min(118px, 92%);
+  margin:  auto;
+  padding: 80px ;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin:  auto 42px;
+}
+
+.section-heading span {
+  color: #7cf7c7;
+  font-weight: 900;
+}
+
+.section-heading h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.25;
+  margin: 10px  14px;
+}
+
+.section-heading p {
+  color: #aab3ca;
+  font-size: 18px;
+}
+
+/* المميزات */
+.features-grid,
+.plans-grid,
+.trainers-grid,
+.testimonials-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.features-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-card,
+.plan-card,
+.trainer-card,
+.testimonial-card {
+  background: #101625;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.feature-card:hover,
+.plan-card:hover,
+.trainer-card:hover,
+.testimonial-card:hover {
+  border-color: rgba(124, 247, 199, .45);
+  transform: translateY(-5px);
+  transition: .25s ease;
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: rgba(124, 247, 199,
